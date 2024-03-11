@@ -42,9 +42,19 @@
   margin-right: 5px;
 }
 
-
 .tasks {
-  /* Add styles for the tasks container */
+font-size: 10px;
+  margin-right: 8px;
+  margin-left: auto;
+  border-bottom: 1px solid rgb(223, 223, 223);
+  border-right: 1px solid rgb(223, 223, 223);
+  border-top: 1px solid rgb(112, 112, 112);
+  border-left: 1px solid rgb(112, 112, 112);
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .tray {
@@ -58,6 +68,4 @@
 }
 
 .taskbar-time {
-  margin-left: auto;
-  cursor: pointer;
 }

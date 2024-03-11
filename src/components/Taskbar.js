@@ -11,7 +11,7 @@ const Taskbar = () => {
       </button>
       <div className="tasks"></div>
       <div className="taskbar-divider"></div>
-      <div className="tray inset-shallow">
+      <div className="taskbar-time">
         <div className="tray-icons"></div>
       </div>
     </div>
