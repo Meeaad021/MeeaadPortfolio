@@ -1,0 +1,9 @@
+.desktop-container {
+  display: grid;
+  grid-area: 1 / 1 / 2 / 2;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  background-color: #017d7d;
+  height: 100vh;
+  margin: 0;
+}
