@@ -4,7 +4,7 @@ import Taskbar from '../components/Taskbar';
 
 const Desktop = () => {
   return (
-    <div class="desktop-container">
+    <div className="desktop-container">
     <Taskbar />
     </div>
   );

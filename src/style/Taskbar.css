@@ -42,6 +42,20 @@
   margin-right: 5px;
 }
 
+
+.menu {
+    position: absolute;
+    bottom: 20px;
+    z-index: 2;
+    background-color: rgb(198, 198, 198);
+    font-family: "Windows Regular";
+    width: 200px; 
+    height: 300px;
+    line-height: 30px;
+    text-rendering: optimizeSpeed;
+    box-shadow: #dfdfdf 1px 1px inset, #000 1px 0, #000 0 1px, #000 1px 1px;
+}
+
 .tasks {
   font-size: 10px;
   margin-right: 8px;
@@ -67,10 +81,18 @@
   margin-right: 1px;
 }
 
-
 .taskbar-time {
   font-family: 'MS Sans Serif', Geneva, sans-serif;
   font-size: 10px;
   margin-right: 2px;
   color: black; 
+}
+
+.menu Tablemountainmenu img{
+  width: '10px'; 
+  height: '50px';
+}
+
+.menu Tablemountainmenu img{
+  transform: rotate(90deg); /* Adjust the angle as needed */
 }
