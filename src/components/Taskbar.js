@@ -28,13 +28,17 @@ const Taskbar = () => {
         <img src={win98StartMenuImage} alt="Start Menu Icon" /> Start
       </button>
       {startMenuOpen && (
+        <div className="menubanner">
+        <div className="menuheadshot">
         <div className="menu">
-        <img src={Tablemountainmenu} className="Tablemountainmenu" style={{ width: '109px', height: '299px' }} />          <ul>
+        <ul>
             <li>LinkedIn</li>
             <li>Github</li>
             <li>Resume</li>
             <li>Stackoverflow</li>
-          </ul>
+        </ul>
+        </div>
+        </div>
         </div>
       )}
       <div className="taskbar-divider"></div>
