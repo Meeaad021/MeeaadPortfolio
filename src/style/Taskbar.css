@@ -50,7 +50,7 @@
     z-index: 2;
     background-color: rgb(198, 198, 198);
     font-family: "Windows Regular";
-    width: 205px; 
+    width: 180px; 
     height: 241px;
     line-height: 30px;
     text-rendering: optimizeSpeed;
@@ -125,8 +125,8 @@
   }
 
 .menu ul li {
-  border-bottom: 1px solid black; /* Border between rows */
-  padding: 10px 0; /* Adjust vertical spacing */
+  border-bottom: 1px solid black;
+  padding: 10px 0;
 }
 
 .menu ul li a {
@@ -139,7 +139,7 @@
   width: 20px; 
   height: 20px;
   margin-right: 5px;
-  margin-left: 50px;
+  margin-left: 5px;
 }
 
 .tasks {
