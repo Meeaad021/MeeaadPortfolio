@@ -3,7 +3,8 @@ import '../style/Taskbar.css';
 import win98StartMenuImage from '../images/Win98StartMenu.webp';
 import Win98Volume from '../images/Win98Volume.png';
 import Tablemountainmenu from '../images/Tablemountainmenu.png';
-
+import Meeaadheadshot from '../images/Meeaadheadshot.jpg';
+import linkedinlogo from '../images/linkedinlogo.jpg';
 
 
 const Taskbar = () => {
@@ -29,12 +30,16 @@ const Taskbar = () => {
       </button>
       {startMenuOpen && (
         <div className="menubanner">
+                <img src={Tablemountainmenu} alt="Table mountain menu" className="Tablemountainmenu-icon"/>
         <div className="menuheadshot">
+                <img src={Meeaadheadshot} alt="Meeaadheadshot" className="Meeaadheadshot"/>
+        
         <div className="menu">
         <ul>
-            <li>LinkedIn</li>
-            <li>Github</li>
+            <li><img src={linkedinlogo} alt="LinkedIn Logo"/> <a href="https://www.linkedin.com/in/meeaadbharoochi/">LinkedIn</a></li>
+            <li>About Me</li>
             <li>Resume</li>
+            <li>Github</li>
             <li>Stackoverflow</li>
         </ul>
         </div>

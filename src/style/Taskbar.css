@@ -45,26 +45,29 @@
 
 .menu {
     position: absolute;
-    bottom: 0px;
-    left: 42px;
+    bottom: -202px;
+    left: 40px;
     z-index: 2;
     background-color: rgb(198, 198, 198);
     font-family: "Windows Regular";
     width: 205px; 
-    height: 240px;
+    height: 241px;
     line-height: 30px;
     text-rendering: optimizeSpeed;
-    box-shadow: #dfdfdf 1px 1px inset, #000 1px 0, #000 0 1px, #000 1px 1px;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    box-shadow: inset 1 1 1 1px rgba(0,0,0,0.5); 
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
 }
 
 .menubanner {
     position: absolute;
     bottom: 31.7px;
-    left: 0px;
+    left: 1px;
     z-index: 2;
     background-color: rgb(198, 198, 198);
     font-family: "Windows Regular";
@@ -72,17 +75,22 @@
     height: 200px;
     line-height: 30px;
     text-rendering: optimizeSpeed;
-    box-shadow: #dfdfdf 1px 1px inset, #000 1px 0, #000 0 1px, #000 1px 1px;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.menubanner img {
+  width: 40px;
+  height: 200px;
 }
 
 .menuheadshot {
     position: absolute;
     bottom: 200px;
-    left: 0px;
+    left: -1px;
     z-index: 2;
     background-color: rgb(198, 198, 198);
     font-family: "Windows Regular";
@@ -90,11 +98,17 @@
     height: 40px;
     line-height: 30px;
     text-rendering: optimizeSpeed;
-    box-shadow: #dfdfdf 1px 1px inset, #000 1px 0, #000 0 1px, #000 1px 1px;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.menuheadshot img {
+  width: 40px;
+  height: 40px;
 }
 
 .menu ul {
@@ -104,11 +118,28 @@
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-decoration: none;
     line-break: 1px solid black #2a3f55;
     line-height: 1rem;
-    padding: 10px 0;
+  }
+
+.menu ul li {
+  border-bottom: 1px solid black; /* Border between rows */
+  padding: 10px 0; /* Adjust vertical spacing */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: MS Sans Serif;
+  }
+
+.menu ul li img {
+  width: 20px; 
+  height: 20px;
+  margin-right: 5px;
+  margin-left: 50px;
 }
 
 .tasks {
