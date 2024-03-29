@@ -1,0 +1,68 @@
+.about-me-container {
+  top: -1200%;
+  font-weight: 400;
+  letter-spacing: .025em;
+  font-smoothing: never;
+  background-color: #c6c6c6;
+  border-top: 2px solid #efefef;
+  border-left: 2px solid #efefef;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  height: auto; 
+  width: 100%;
+  position: relative;
+}
+
+.about-me-content p {
+  padding: 8px;
+  height: auto;
+  width: calc(100% - 20px);
+  background-color: #c6c6c6;
+  display: inline-block;
+}
+
+.title-bar {
+  height: 20px;
+  position: relative;
+  text-align: left;
+  color: #fff;
+  padding: 1px;
+  line-height: 1.4;
+  border-top: 1px solid silver;
+  border-left: 1px solid silver;
+  border-right: 2px solid silver;
+  border-bottom: 1px solid silver;
+  background: navy;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-bar-controls button {
+  display: inline-block;
+  -moz-appearance: none;
+  appearance: none;
+  font-weight: 700;
+  letter-spacing: .05em;
+  padding: 0px;
+  border-left: 2px solid #ededed;
+  border-top: 2px solid #ededed;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+}
+
+.title-bar-controls button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.title-bar-text {
+  max-width: calc(100% - 40px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.draggable {
+  top: auto !important;
+  left: auto !important;
+}

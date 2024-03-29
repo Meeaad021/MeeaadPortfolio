@@ -8,21 +8,21 @@ import linkedinlogo from '../images/linkedinlogo.jpg';
 import Resumeicon from '../images/Resumeicon.png';
 import Github from '../images/Github.png';
 import Aboutme from '../images/Aboutme.png';
-import Container from '../components/Container';
+import AboutMeContent from './AboutMeContent';
+import Gmail from '../images/Gmail.png';
 
 const Taskbar = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [startMenuOpen, setStartMenuOpen] = useState(false);
-  const [aboutMeOpen, setAboutMeOpen] = useState(false); // State variable to track the About Me container
+  const [AboutMeOpen, setAboutMeOpen] = useState(false); // Corrected variable name
 
   const toggleStartMenu = () => {
     setStartMenuOpen(!startMenuOpen);
   };
 
-  const toggleAboutMe = () => {
-    setAboutMeOpen(!aboutMeOpen); // Toggle the state variable for About Me container
-  };
-
+const toggleAboutMe = () => {
+  setAboutMeOpen(!AboutMeOpen);
+};
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentTime(new Date());
@@ -47,15 +47,13 @@ const Taskbar = () => {
                 <li onClick={toggleAboutMe}><img src={Aboutme} alt="About me"/>About Me</li>
                 <li><img src={Resumeicon} alt="Resume icon"/><a href="Resume.pdf" target="_blank">Resume</a></li>
                 <li><img src={Github} alt="Github icon"/><a href="https://github.com/Meeaad021" target="_blank">Github</a></li>
-                <li>Stackoverflow</li>
+                <li><a href="mailto:meeaadbharoochi@gmail.com"><img src={Gmail} alt="Gmail icon"/>Gmail</a></li>
               </ul>
             </div>
           </div>
         </div>
       )}
-      {aboutMeOpen && ( // Conditionally render the About Me container
-        <Container />
-      )}
+      {AboutMeOpen && <AboutMeContent onClose={toggleAboutMe} />} {/* Pass toggleAboutMe function as prop */}
       <div className="taskbar-divider"></div>
       <div className="tasks">
         <img src={Win98Volume} alt="Volume Icon" className="small-image volume-icon" />
