@@ -1,9 +1,9 @@
 .desktop-container {
   display: grid;
-  grid-area: 1 / 1 / 2 / 2;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto 1fr; /* Taskbar will take auto height and the rest will take the remaining space */
   grid-template-columns: 1fr;
   background-color: #017d7d;
   height: 100vh;
   margin: 0;
+  width: 100%;
 }
