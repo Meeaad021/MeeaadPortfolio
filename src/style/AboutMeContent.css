@@ -9,17 +9,40 @@
   border-right: 2px solid #000;
   border-bottom: 2px solid #000;
   height: auto; 
-  width: 100%;
+  width: 40%;
   position: relative;
+  margin-left: 300px;
+  margin-bottom: 100px;
 }
 
-.about-me-content p {
+.about-me-content .page1 p {
   padding: 8px;
   height: auto;
-  width: calc(100% - 20px);
+  width: calc(60% - 20px);
   background-color: #c6c6c6;
   display: inline-block;
+  color: black;
+  margin-top: 20px;   
 }
+
+.about-me-content .page2 p {
+  padding: 2px;
+  height: auto;
+  width: calc(80% - 30px);
+  background-color: #c6c6c6;
+  display: inline-block;
+  color: black;
+}
+
+.about-me-content .page3 p {
+  padding: 8px;
+  height: auto;
+  width: calc(60% - 20px);
+  background-color: #c6c6c6;
+  display: inline-block;
+  color: black;
+}
+
 
 .title-bar {
   height: 20px;
@@ -62,7 +85,26 @@
   white-space: nowrap;
 }
 
+.btn {
+    background: #c6c6c6;
+    box-shadow: #dfdfdf 1px 1px inset, #000 1px 0, #000 0 1px, #000 1px 1px;
+    border: 1px solid black;
+    border-top: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+    border-radius: 0;
+    padding: 5px;
+    margin-bottom: 8px;
+    margin-left: 5px;
+}
+
+.Aboutmegradpic {
+  width: 38%; /* Set the width */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 10px;
+}
+
 .draggable {
   top: auto !important;
   left: auto !important;
 }
+

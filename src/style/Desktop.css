@@ -1,9 +1,135 @@
 .desktop-container {
-  display: grid;
-  grid-template-rows: auto 1fr; /* Taskbar will take auto height and the rest will take the remaining space */
-  grid-template-columns: 1fr;
-  background-color: #017d7d;
-  height: 100vh;
-  margin: 0;
+  position: relative;
   width: 100%;
+  height: 100vh;
+  background-color: #017d7d;
+  font-family: 'px sans nouveaux', Arial, Helvetica, sans-serif;
+}
+
+.my-computer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  top: 10px;
+  left: 10px;
+}
+
+.skills {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  top: 90px;
+  left: 40px;
+}
+
+.my-computer-icon, 
+.skills-icon {
+  width: 30px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.my-computer-text, 
+.skills-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.my-computer-window, 
+.skills-window {
+  top: 10%;
+  left: 10%;
+  width: 60%;
+  height: 70%;
+  position: absolute;
+  background-color: #c6c6c6;
+  border: 2px solid #000;
+  overflow: hidden;
+}
+
+.my-computer-content, 
+.skills-content p {
+  padding: 8px;
+  height: auto;
+  width: calc(100% - 20px);
+  background-color: #c6c6c6;
+  display: inline-block;
+  color: black;
+}
+
+.title-bar {
+  height: 20px;
+  position: relative;
+  text-align: left;
+  color: #fff;
+  padding: 1px;
+  line-height: 1.4;
+  border-top: 1px solid silver;
+  border-left: 1px solid silver;
+  border-right: 2px solid silver;
+  border-bottom: 1px solid silver;
+  background: #017d7d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-bar-controls button {
+  display: inline-block;
+  -moz-appearance: none;
+  appearance: none;
+  font-weight: 700;
+  letter-spacing: .05em;
+  padding: 0px;
+  border-left: 2px solid #ededed;
+  border-top: 2px solid #ededed;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+  background-color: #017d7d;
+}
+
+.title-bar-controls button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.skills-container {
+  width: 90%;
+  height: 300px;
+  padding: 20px;
+  border: 2px solid #000;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background: white;
+}
+
+.clippy-window {
+  top: 10%;
+  left: 10%;
+  width: 60%;
+  height: 70%;
+  position: absolute;
+  background-color: #c6c6c6;
+  border: 2px solid #000;
+  overflow: hidden;
+}
+
+.clippy-content p {
+  padding: 8px;
+  height: auto;
+  width: calc(100% - 20px);
+  background-color: #c6c6c6;
+  display: inline-block;
+  color: black;
+}
+
+.clippy-icon {
+  width: 70px;
+  height: auto;
+  margin-left: 1200px;
 }
