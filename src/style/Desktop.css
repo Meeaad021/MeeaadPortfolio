@@ -1,135 +1,340 @@
 .desktop-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-color: #017d7d;
-  font-family: 'px sans nouveaux', Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #017d7d;
+    font-family: 'px sans nouveaux', Arial, Helvetica, sans-serif;
+}
+
+.my-computer,
+.skills {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
 }
 
 .my-computer {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  top: 10px;
-  left: 10px;
+    top: 10px;
+    left: 10px;
 }
 
 .skills {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  top: 90px;
-  left: 40px;
+    top: 100px;
+    left: 40px;
 }
 
-.my-computer-icon, 
+.my-computer-icon,
 .skills-icon {
-  width: 30px;
-  height: auto;
-  margin-bottom: 5px;
+    width: 30px;
+    height: auto;
+    margin-bottom: 5px;
 }
 
-.my-computer-text, 
+.my-computer-text,
 .skills-text {
-  font-size: 16px;
-  font-weight: bold;
-  color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
 }
 
-.my-computer-window, 
+.my-computer-window,
 .skills-window {
-  top: 10%;
-  left: 10%;
-  width: 60%;
-  height: 70%;
-  position: absolute;
-  background-color: #c6c6c6;
-  border: 2px solid #000;
-  overflow: hidden;
+    left: 20%;
+    width: 60%;
+    height: 90%; /* Updated height */
+    position: absolute;
+    background-color: #c6c6c6;
+    border: 2px solid #000;
+    overflow: hidden;
+    top: 10px; /* Updated top position */
 }
 
-.my-computer-content, 
+.my-computer-content,
 .skills-content p {
-  padding: 8px;
-  height: auto;
-  width: calc(100% - 20px);
-  background-color: #c6c6c6;
-  display: inline-block;
-  color: black;
+    padding: 8px;
+    height: auto;
+    width: calc(100% - 20px);
+    background-color: #c6c6c6;
+    display: inline-block;
+    color: black;
 }
 
 .title-bar {
-  height: 20px;
-  position: relative;
-  text-align: left;
-  color: #fff;
-  padding: 1px;
-  line-height: 1.4;
-  border-top: 1px solid silver;
-  border-left: 1px solid silver;
-  border-right: 2px solid silver;
-  border-bottom: 1px solid silver;
-  background: #017d7d;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    height: 20px;
+    position: relative;
+    text-align: left;
+    color: #fff;
+    padding: 1px;
+    line-height: 1.4;
+    border-top: 1px solid silver;
+    border-left: 1px solid silver;
+    border-right: 2px solid silver;
+    border-bottom: 1px solid silver;
+    background: #017d7d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .title-bar-controls button {
-  display: inline-block;
-  -moz-appearance: none;
-  appearance: none;
-  font-weight: 700;
-  letter-spacing: .05em;
-  padding: 0px;
-  border-left: 2px solid #ededed;
-  border-top: 2px solid #ededed;
-  border-right: 2px solid #404040;
-  border-bottom: 2px solid #404040;
-  background-color: #017d7d;
+    display: inline-block;
+    -moz-appearance: none;
+    appearance: none;
+    font-weight: 700;
+    letter-spacing: .05em;
+    padding: 0px;
+    border-left: 2px solid #ededed;
+    border-top: 2px solid #ededed;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+    background-color: #017d7d;
 }
 
-.title-bar-controls button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
+    .title-bar-controls button:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
 
 .skills-container {
-  width: 90%;
-  height: 300px;
-  padding: 20px;
-  border: 2px solid #000;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    border: 2px solid #000;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background: white;
+    overflow-y: scroll; /* Enable vertical scrolling with a physical scrollbar */
 }
 
-.clippy-window {
-  top: 10%;
-  left: 10%;
-  width: 60%;
-  height: 70%;
-  position: absolute;
-  background-color: #c6c6c6;
-  border: 2px solid #000;
-  overflow: hidden;
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 0 10px;
+    min-width: 100px;
 }
 
-.clippy-content p {
-  padding: 8px;
-  height: auto;
-  width: calc(100% - 20px);
-  background-color: #c6c6c6;
-  display: inline-block;
-  color: black;
+h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
-.clippy-icon {
-  width: 70px;
-  height: auto;
-  margin-left: 1200px;
+.Python-icon,
+.Javascript-icon,
+.Typescript-icon,
+.SQL-icon,
+.CSharp-icon,
+.React-icon,
+.Vue-icon,
+.VSCode-icon,
+.PyCharm-icon,
+.SublimeText-icon,
+.Selenium-icon,
+.Pandas-icon,
+.Excel-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+/* Text styles */
+.Python-text,
+.Javascript-text,
+.Typescript-text,
+.SQL-text,
+.CSharp-text,
+.React-text,
+.Vue-text,
+.VSCode-text,
+.PyCharm-text,
+.SublimeText-text,
+.Selenium-text,
+.Pandas-text,
+.MicrosoftExcel-text {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px; /* Added margin-bottom */
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .desktop-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-color: #017d7d;
+        font-family: 'px sans nouveaux', Arial, Helvetica, sans-serif;
+    }
+
+    .my-computer,
+    .skills {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .my-computer {
+        top: 10px;
+        left: 10px;
+    }
+
+    .skills {
+        top: 100px;
+        left: 40px;
+    }
+
+    .my-computer-icon,
+    .skills-icon {
+        width: 30px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .my-computer-text,
+    .skills-text,
+    .MicrosoftExcel-text {
+        font-size: 14px;
+        font-weight: bold;
+        color: #000;
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 15px; /* Increased margin-bottom for spacing */
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .my-computer-window,
+    .skills-window {
+        left: 20%;
+        width: 60%;
+        height: 90%; /* Updated height */
+        position: absolute;
+        background-color: #c6c6c6;
+        border: 2px solid #000;
+        overflow: hidden;
+        top: 1500px; /* Updated top position */
+    }
+
+    .my-computer-content,
+    .skills-content p {
+        padding: 8px;
+        height: auto;
+        width: calc(100% - 20px);
+        background-color: #c6c6c6;
+        display: inline-block;
+        color: black;
+    }
+
+    .title-bar {
+        height: 20px;
+        position: relative;
+        text-align: left;
+        color: #fff;
+        padding: 1px;
+        line-height: 1.4;
+        border-top: 1px solid silver;
+        border-left: 1px solid silver;
+        border-right: 2px solid silver;
+        border-bottom: 1px solid silver;
+        background: #017d7d;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .title-bar-controls button {
+        display: inline-block;
+        -moz-appearance: none;
+        appearance: none;
+        font-weight: 700;
+        letter-spacing: .05em;
+        padding: 0px;
+        border-left: 2px solid #ededed;
+        border-top: 2px solid #ededed;
+        border-right: 2px solid #404040;
+        border-bottom: 2px solid #404040;
+        background-color: #017d7d;
+    }
+
+        .title-bar-controls button:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center items horizontally */
+        align-items: flex-start; /* Align items to the top */
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        border: 2px solid #000;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        background: white;
+        overflow-y: scroll; /* Enable vertical scrolling with a physical scrollbar */
+        top: 100px; /* Updated top position */
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        padding: 0 10px;
+        min-width: 100px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .Python-icon,
+    .Javascript-icon,
+    .Typescript-icon,
+    .SQL-icon,
+    .CSharp-icon,
+    .React-icon,
+    .Vue-icon,
+    .VSCode-icon,
+    .PyCharm-icon,
+    .SublimeText-icon,
+    .Selenium-icon,
+    .Pandas-icon,
+    .Excel-icon,
+    .MicrosoftExcel-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+        object-fit: contain;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
