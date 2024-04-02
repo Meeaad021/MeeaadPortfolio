@@ -3,17 +3,12 @@ import '../style/Clippy.css';
 import Clippy from '../images/Clippy.png';
 
 const ClippyComponent = () => {
-    const [showClippy, setShowClippy] = useState(false);
     const [speechIndex, setSpeechIndex] = useState(0);
-    const [speechTexts, setSpeechTexts] = useState([
+    const [speechTexts] = useState([
         'Hello, I am Clippy!',
         'How can I assist you today?',
-        'Need help with anything?'
+        'Transitioning from content writing to data capture, and striving to soar in the realm of software development.'
     ]);
-
-    const toggleClippy = () => {
-        setShowClippy(!showClippy);
-    };
 
     const handleClickMe = () => {
         if (speechIndex < speechTexts.length - 1) {
@@ -24,20 +19,14 @@ const ClippyComponent = () => {
     };
 
     return (
-        <div className="Clippy" onClick={toggleClippy}>
+        <div className="Clippy">
             <img src={Clippy} alt="Clippy" className="clippy-icon" />
-            {showClippy && (
-                <div className="clippy-window">
-                    <div className="clippy-content">
-                        <div>
-                            <p>{speechTexts[speechIndex]}</p>
-                            <button onClick={handleClickMe} className="click-me-button">
-                                Click Me
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            )}
+            <div className="clippy-speech-bubble">
+                <p>{speechTexts[speechIndex]}</p>
+                <button onClick={handleClickMe} className="click-me-button">
+                    Click Me
+                </button>
+            </div>
         </div>
     );
 };
