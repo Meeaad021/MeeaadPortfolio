@@ -4,32 +4,28 @@
     height: 100vh;
     background-color: #017d7d;
     font-family: 'px sans nouveaux', Arial, Helvetica, sans-serif;
+    overflow: hidden; /* Prevents children from overflowing the container */
 }
 
 .my-computer,
-.skills {
+.skills-icon {
+    top: 10px;
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    z-index: 2; /* Ensures these are above the Clippy component */
 }
 
-.my-computer {
-    top: 10px;
-    left: 10px;
-}
-
-.skills {
-    top: 50px; /* Adjusted to place it below My Computer */
-    left: 40px;
-}
-
-.my-computer-icon,
 .skills-icon {
+    top: 80px;
+    left: 30px;
+}
+
+.my-computer-icon {
     width: 30px;
     height: auto;
-    margin-bottom: 5px;
 }
 
 .my-computer-text,
@@ -66,10 +62,7 @@
     color: #fff;
     padding: 1px;
     line-height: 1.4;
-    border-top: 1px solid silver;
-    border-left: 1px solid silver;
-    border-right: 2px solid silver;
-    border-bottom: 1px solid silver;
+    border: 1px solid silver;
     background: #017d7d;
     display: flex;
     justify-content: space-between;
@@ -83,10 +76,7 @@
     font-weight: 700;
     letter-spacing: .05em;
     padding: 0px;
-    border-left: 2px solid #ededed;
-    border-top: 2px solid #ededed;
-    border-right: 2px solid #404040;
-    border-bottom: 2px solid #404040;
+    border: 2px solid #404040;
     background-color: #017d7d;
 }
 
@@ -94,112 +84,30 @@
         background-color: rgba(255, 255, 255, 0.1);
     }
 
+.clippy-component {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    z-index: 1; /* Ensures it stays below other elements */
+    pointer-events: none; /* Makes it non-clickable */
+}
+
 @media (max-width: 768px) {
     .my-computer-window {
         top: 1500px;
     }
+}
 
-    .desktop-container {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        background-color: #017d7d;
-        font-family: 'px sans nouveaux', Arial, Helvetica, sans-serif;
-    }
+.desktop-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
 
-    .my-computer,
-    .skills {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    .my-computer {
-        top: 10px;
-        left: 10px;
-    }
-
-    .skills {
-        top: 100px;
-        left: 40px;
-    }
-
-    .my-computer-icon,
-    .skills-icon {
-        width: 30px;
-        height: auto;
-        margin-bottom: 5px;
-    }
-
-    .my-computer-text,
-    .skills-text {
-        font-size: 14px;
-        font-weight: bold;
-        color: #000;
-        display: block;
-        text-align: center;
-        margin-top: 5px;
-        margin-bottom: 15px;
-        width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .my-computer-window {
-        left: 20%;
-        width: 60%;
-        height: 90%;
-        position: absolute;
-        background-color: #c6c6c6;
-        border: 2px solid #000;
-        overflow: hidden;
-        top: 1500px;
-    }
-
-    .my-computer-content {
-        padding: 8px;
-        height: auto;
-        width: calc(100% - 20px);
-        background-color: #c6c6c6;
-        display: inline-block;
-        color: black;
-    }
-
-    .title-bar {
-        height: 20px;
-        position: relative;
-        text-align: left;
-        color: #fff;
-        padding: 1px;
-        line-height: 1.4;
-        border-top: 1px solid silver;
-        border-left: 1px solid silver;
-        border-right: 2px solid silver;
-        border-bottom: 1px solid silver;
-        background: #017d7d;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .title-bar-controls button {
-        display: inline-block;
-        -moz-appearance: none;
-        appearance: none;
-        font-weight: 700;
-        letter-spacing: .05em;
-        padding: 0px;
-        border-left: 2px solid #ededed;
-        border-top: 2px solid #ededed;
-        border-right: 2px solid #404040;
-        border-bottom: 2px solid #404040;
-        background-color: #017d7d;
-    }
-
-        .title-bar-controls button:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
+.clippy-container {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    width: auto; /* Adjust the width as per your icon size */
+    height: auto;
 }
