@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/MeeaadPortfolio/static/css/main.6f734ea1.css",
-    "main.js": "/MeeaadPortfolio/static/js/main.592d948d.js",
-    "static/media/Meeaadheadshot.jpg": "/MeeaadPortfolio/static/media/Meeaadheadshot.08ea72a3a96cd8d4e2ef.jpg",
-    "static/media/Aboutmegradpic.jpg": "/MeeaadPortfolio/static/media/Aboutmegradpic.92da8e14160c2287fe5e.jpg",
-    "static/media/Clippy.png": "/MeeaadPortfolio/static/media/Clippy.0b6a54b01c6e5711d81d.png",
-    "static/media/Win98StartMenu.webp": "/MeeaadPortfolio/static/media/Win98StartMenu.f8145e23a45df5a74656.webp",
-    "index.html": "/MeeaadPortfolio/index.html",
-    "main.6f734ea1.css.map": "/MeeaadPortfolio/static/css/main.6f734ea1.css.map",
-    "main.592d948d.js.map": "/MeeaadPortfolio/static/js/main.592d948d.js.map"
+    "main.css": "/MeeaadPortfolio/src/static/css/main.c0e1c190.css",
+    "main.js": "/MeeaadPortfolio/src/static/js/main.0b4cfb26.js",
+    "static/media/Meeaadheadshot.jpg": "/MeeaadPortfolio/src/static/media/Meeaadheadshot.08ea72a3a96cd8d4e2ef.jpg",
+    "static/media/Aboutmegradpic.jpg": "/MeeaadPortfolio/src/static/media/Aboutmegradpic.92da8e14160c2287fe5e.jpg",
+    "static/media/Clippy.png": "/MeeaadPortfolio/src/static/media/Clippy.9dbc5d6687d9770f2924.png",
+    "static/media/Win98StartMenu.webp": "/MeeaadPortfolio/src/static/media/Win98StartMenu.f8145e23a45df5a74656.webp",
+    "index.html": "/MeeaadPortfolio/src/index.html",
+    "main.c0e1c190.css.map": "/MeeaadPortfolio/src/static/css/main.c0e1c190.css.map",
+    "main.0b4cfb26.js.map": "/MeeaadPortfolio/src/static/js/main.0b4cfb26.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f734ea1.css",
-    "static/js/main.592d948d.js"
+    "static/css/main.c0e1c190.css",
+    "static/js/main.0b4cfb26.js"
   ]
 }
