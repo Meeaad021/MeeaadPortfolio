@@ -29,7 +29,9 @@ const Desktop = () => {
                 <img src={Edge} alt="Edge" className="Edge-icon" />
                 <span className="skills-text">Skills</span>
             </div>
-            <ClippyComponent />
+            <div className="clippy-container">
+                <ClippyComponent />
+            </div>
             {showMyComputer && (
                 <div className="my-computer-window">
                     <div className="title-bar">

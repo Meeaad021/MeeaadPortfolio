@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../style/Skills.css';
 import Python from '../images/Python.png';
 import Javascript from '../images/Javascript.png';
