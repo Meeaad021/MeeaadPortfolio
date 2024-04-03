@@ -6,8 +6,11 @@ const ClippyComponent = () => {
     const [speechIndex, setSpeechIndex] = useState(0);
     const [speechTexts] = useState([
         'Hello, I am Clippy!',
-        'How can I assist you today?',
-        'Transitioning from content writing to data capture, and striving to soar in the realm of software development.'
+        'Click here for a few fun facts about Meeaad.',
+        'Meeaad enjoys travelling and has been to over 15 countries all over the world.',
+        'Caught his first fish in 2023 (Roughly 10-15cm).',
+        'Recently started hitting the driving range and is eager to do a full 18 hole course.',
+
     ]);
 
     const handleClickMe = () => {
